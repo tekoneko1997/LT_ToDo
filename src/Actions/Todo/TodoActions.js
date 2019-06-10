@@ -1,19 +1,21 @@
 //import { IAddTodoAction, IToggleTodoAction, IDeleteTodoAction } from './TodoAction';
-import { TodoActionType } from './TodoActionType';
+//import { TodoActionType } from './TodoActionType';
 
 let nextTodoId = 0;
 
-export function addTodo(text){
+export function addTodo(title, detail){
     return {
         type: 'ADD_TODO',
         id: nextTodoId++,
-        text,
+        title,
+        detail,
+        completed: false
     }
 }
 
-export function toggleTodo(id){
+export function editTodo(id){
     return {
-        type: 'TOGGLE_TODO',
+        type: 'EDIT_TODO',
         id: id,
     }
 }

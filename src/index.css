@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 } */
+
+.mdl-dialog {
+  border: none;
+  box-shadow: 0 9px 46px 8px rgba(0,0,0,.14), 0 11px 15px -7px rgba(0,0,0,.12), 0 24px 38px 3px rgba(0,0,0,.2);
+  width: 280px;
+  z-index: 100;
+}
+
+#main {
+  height: 60px;
+}
+
+.html {
+  height: 100%;
+  widows: 100%;
+}
+
+
+//=================================
+// Font-sizeについて
+// bodyやhtml要素でfont-sizeを62.5%にしておくと基準が16pxの62.5%、つまり10pxになります。 
+// こうすることで、ちょうど1em=10pxになり、18pxにしたいなあと思うなら1.8emと書けば良いし、
+// 24pxにしたいなら2.4emと書けば良いので計算がしやすいわけです。
+// 「rem」 は常にhtml 要素のフォントサイズを基準にするので基本的にremを使いましょう。
+// https://www.esz.co.jp/blog/28.html
+//=================================
+.html{
+    height: 100%;
+    width:100%;
+}
+.body{
+
+    height: 100%;
+    width:100%;
+    font-size:1.4rem;
+    overscroll-behavior: none;
+}
+
+.demo-card-wide.mdl-card {
+  width: 400px;
+}
+/* .demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+} */
+
+#gridLayout{
+  display: grid;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+}
+
+#gridLayoutItem{
+
+}

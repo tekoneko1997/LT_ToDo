@@ -1,5 +1,5 @@
 import React from 'react';
-import AddTodoModal from '../../../Containers/Molecules/AddTodoModal/AddTodoModal';
+import AddTodoModal from '../../../Containers/Organisms/AddTodoModal/AddTodoModal';
 
 
 class OATMButton extends React.Component {

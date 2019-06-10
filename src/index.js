@@ -7,6 +7,9 @@ import reducers from './Reducers/indexs';
 //import logger from 'redux-logger';
 import './index.css';
 
+import 'react-mdl/extra/material.css';
+import 'react-mdl/extra/material.js';
+
 import App from './Components/Pages/App';
 
 import * as serviceWorker from './serviceWorker';
